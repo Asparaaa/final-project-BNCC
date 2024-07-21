@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mid Project BNCC</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+  
+</head>
+
+<body>
+
+    <header>
+        <h1>Programming Learning n Training</h1><br>
+
+        <div class="wrapper-logo">
+            <div class="title">
+                <h3>Powered by</h3>
+            </div>
+
+            <img src="BNCC.png" alt="logo BNCC" width="110px" height="40px" />
+        </div>
+
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Dashboard</a> </li>
+            <li><a href="home.html">Home</a> </li>
+            <li><a href="course.html" class="active">Course</a> </li>
+            <li><a href="about.html">About us</a> </li>
+            <li><a href="contact.html">Contact us</a> </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Course</h2>
+        <div class="course_subtitle">
+            <h4>Tekan salah satu tombol untuk melihat informasi</h4>
+        </div>
+
+        <div class="tab">
+            <button class="tablinks" onclick="courseName(event, 'Front-End')">Front-End</button>
+            <button class="tablinks" onclick="courseName(event, 'Back-End')">Back-End</button>
+            <button class="tablinks" onclick="courseName(event, 'UI/UX')">UI/UX</button>
+        </div>
+
+
+        <div id="Front-End" class="tabcontent">
+            <h3>Front-End development</h3>
+            <p>Front-end merupakan bagian website yang menampilkan tampilan untuk pengguna.
+                umumnya, orang yang memegang bagian web ini bertugas untuk mengubah desain tampilan
+                yang diberikan dari divisi UI/UX menjadi sebuah kode dan dapat digunakan dalam web yang dikerjakan. </p>
+            <br>
+            <p>Materi yang akan diberikan dalam course ini yaitu pengenalan dan penguasaan terhadap bahasa kode HTML,
+                CSS, dan Javascript.</p>
+            <br>
+            <p>Pertemuan akan dilakukan dengan 24 kali pertemuan dalam jangka waktu 1 tahun.</p>
+
+        </div>
+
+        <div id="Back-End" class="tabcontent">
+            <h3>Back-End development</h3>
+            <p>Back-end merupakan bagian website yang tidak dilihat oleh pengguna.
+                orang yang memegang bagian ini bertugas untuk menyimpan dan mengatur data, serta memastikan hal yang ada
+                pada sisi pengguna berfungsi dengan baik. </p>
+            <br>
+            <p>Materi yang diberikan dalam course ini yaitu pengenalan dan penguasaan terhadap bahasa kode C, C++, Java,
+                Python, dan PHP.</p>
+            <br>
+            <p>Pertemuan akan dilakukan dengan 24 kali pertemuan dalam jangka waktu 1 tahun.</p>
+
+        </div>
+
+        <div id="UI/UX" class="tabcontent">
+            <h3>UI/UX</h3>
+            <p>UI merupakan singkatan dari User Interface, sedangkan UX adalah singkatan dari User eXperience.
+                keduanya berfungsi untuk mengembangkan desain sebuah website, namun memiliki cara kerja yang berbeda.
+                UI lebih fokus pada visualisasi, pewarnaan, dan hal - hal yang diperlukan untuk estetika dalam sebuah
+                website, sedangkan UX lebih berfokus pada proses pembuatan produk hingga mampu mendapatkan pengalaman
+                kemudahan dari pengguna.
+                tujuan utama dari UX designer yaitu menciptakan produk yang memudahkan dan sesuai dengan kebutuhan
+                pengguna. </p>
+            <br>
+            <p>
+                Materi yang diberikan dalam course ini yaitu pengenalan dan penguasaan terhadap tools UI/UX seperti
+                figma, canva, adobe illustrator, dan adobe photoshop.
+            </p>
+            <br>
+            <p>Pertemuan akan dilakukan dengan 24 kali pertemuan dalam jangka waktu 1 tahun.</p>
+        </div>
+    </main>
+</body>
+
+</html>
