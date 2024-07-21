@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project BNCC</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <nav id="web-nav">
+        <div class="logo">Sulthan Saladin Ramadhana Sulun</div>
+            <ul class="nav-links">
+                <li><a href="#About">About</a></li>
+                <li><a href="#Experience">Experience</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Sulthan Saladin Ramadhana Sulun</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()"> 
+                    <span></span>
+                    <span></span>
+                    <span></span>
+            </div>
+                <div class="menu-links">
+                    <li><a href="#About" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#Projects" onclick="toggleMenu()" >Projects</a></li>
+                    <li><a href="#Contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section_pic_container">
+            <img src="./assets/profile.png" alt="profile picture">
+        </div>
+            <div class="section_text">
+                <p class="section_text_p1">Hello, I'm</p>
+                <h1 class="title">Aldi</h1>
+                <p class="section_text_p2">Student in training</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('enter pdf here')">
+                        Download CV
+                    </button>
+                    <button class="btn btn-color-1" onclick="location.href='./#Contact'">
+                        Contact info
+                    </button>  
+                </div>
+                <div id="social-container">
+                    <a href="https://www.linkedin.com/in/sulthan-saladin-ramadhana-sulun-465205294/" 
+                         class="fa fa-linkedin"></a>
+                    <a href="https://github.com/Asparaaa" 
+                          class="fa fa-github"></a>
+                </div>
+            </div>
+    </section>
+    <section id="About">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="about-details-container">
+                 <div class="about-containers">
+                     <div class="details-container">
+                            <img src="./assets/star.png" alt="experience icon" 
+                                     class="icon">
+                                    <h3>Experience</h3> <br>
+                                    <li>Joined technology information  extracurricular at High School</li>
+                                    <li>Joined Bina Nusantara Computer Club (BNCC) Front-end course</li>
+                         </div>
+                            <div class="details-container">
+                            <img src="./assets/graduation.png" alt="education.png" 
+                                      class="icon">
+                            <h3>Education</h3> <br>
+                            <li>Graduated from Laboratorium UM Senior High School</li>
+                             <li>Currently study at Bina Nusantara University</li>
+                         </div>
+                    </div>
+                    <div class="text-container">
+                        <p>I'm a student at Bina Nusantara University at Malang. I'm currently learning about C and HTML. I love to playing games.
+                        </p>
+                    </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow.png" class="icon arrow"
+        onclick="location.href='#Experience'">
+    </section>
+    <section id="Experience">
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Code</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/point-arrow.png" alt="point-arrow.png" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/point-arrow.png" alt="point-arrow.png" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/point-arrow.png" alt="point-arrow.png" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/point-arrow.png" alt="point-arrow.png" class="icon">
+                            <div>
+                                <h3>C</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow.png" class="icon arrow" onclick="location.href='#Projects'">
+    </section>
+    <section id="Projects">
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/weather-project.png" 
+                             alt="Project1.png"
+                             class="project-img">
+                    </div>
+                    <h2 class="experience-sub-title project-title">Weather App Project</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Asparaaa/api-weather-project-BNCC.git'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='./api-weather-project/index.html'">Live Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <div class="article-container">
+                        <img src="./assets/mid-project.png" 
+                             alt="Project2.png"
+                             class="project-img">
+                    </div>
+                    <br>
+                    <h2 class="experience-sub-title project-title">Course Website Project (Mid Project)</h2>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/Asparaaa/MidProject-BNCC-LnT-FrontendDevelopment-2023.git'">GitHub</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='./Mid Project/home.html'">Live Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow.png" class="icon arrow" onclick="location.href='#Contact'">
+    </section>
+    
+    <section id="Contact">
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <a href="#" class="material-icons">mail</a>
+                <p><a href="mailto:sulthansaladinramadhanasulun@gmail.com">sulthansaladinramadhanasulun@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <a href="#" class="fa fa-linkedin"></a>
+                <p><a href="https://www.linkedin.com/in/sulthan-saladin-ramadhana-sulun-465205294/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Experience">Experience</a></li>
+                    <li><a href="#Projects">Projects</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
